@@ -28,6 +28,12 @@ ament_python_install_package(${PROJECT_NAME})
 # Install Python executables
 install(PROGRAMS
   scripts/dummy_script.py
+  scripts/jointstate_script.py
+  scripts/controller_node.py
+  scripts/random_node.py
+  scripts/auto_mode_node.py
+  scripts/ipk_mode_node.py
+  scripts/teleop_mode_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
