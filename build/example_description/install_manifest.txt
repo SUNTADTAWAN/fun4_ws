@@ -7,6 +7,12 @@
 /home/tadtawan/fun4_ws/install/example_description/local/lib/python3.10/dist-packages/example_description/dummy_module.py
 /home/tadtawan/fun4_ws/install/example_description/local/lib/python3.10/dist-packages/example_description/__init__.py
 /home/tadtawan/fun4_ws/install/example_description/lib/example_description/dummy_script.py
+/home/tadtawan/fun4_ws/install/example_description/lib/example_description/jointstate_script.py
+/home/tadtawan/fun4_ws/install/example_description/lib/example_description/controller_node.py
+/home/tadtawan/fun4_ws/install/example_description/lib/example_description/random_node.py
+/home/tadtawan/fun4_ws/install/example_description/lib/example_description/auto_mode_node.py
+/home/tadtawan/fun4_ws/install/example_description/lib/example_description/ipk_mode_node.py
+/home/tadtawan/fun4_ws/install/example_description/lib/example_description/teleop_mode_node.py
 /home/tadtawan/fun4_ws/install/example_description/lib/example_description/cpp_node_test
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/config/display.rviz
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/launch/simple_display.launch.py
