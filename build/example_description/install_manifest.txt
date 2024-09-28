@@ -25,6 +25,13 @@
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/meshes/end_effector.stl
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/robot/visual/01-myfirst.urdf
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/robot/visual/my-robot.xacro
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/scripts/auto_mode_node.py
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/scripts/ipk_mode_node.py
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/scripts/teleop_mode_node.py
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/scripts/dummy_script.py
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/scripts/controller_node.py
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/scripts/jointstate_script.py
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/scripts/random_node.py
 /home/tadtawan/fun4_ws/install/example_description/share/ament_index/resource_index/package_run_dependencies/example_description
 /home/tadtawan/fun4_ws/install/example_description/share/ament_index/resource_index/parent_prefix_path/example_description
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/environment/ament_prefix_path.sh

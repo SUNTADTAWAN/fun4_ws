@@ -17,6 +17,10 @@
 #include "fun4_interfaces/srv/detail/mode__functions.h"
 
 ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__int16__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__int16__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
 bool std_msgs__msg__bool__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * std_msgs__msg__bool__convert_to_py(void * raw_ros_message);
@@ -54,6 +58,17 @@ bool fun4_interfaces__srv__mode__request__convert_from_py(PyObject * _pymsg, voi
     assert(strncmp("fun4_interfaces.srv._mode.Mode_Request", full_classname_dest, 38) == 0);
   }
   fun4_interfaces__srv__Mode_Request * ros_message = _ros_message;
+  {  // request_mode
+    PyObject * field = PyObject_GetAttrString(_pymsg, "request_mode");
+    if (!field) {
+      return false;
+    }
+    if (!std_msgs__msg__int16__convert_from_py(field, &ros_message->request_mode)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
   {  // request_target
     PyObject * field = PyObject_GetAttrString(_pymsg, "request_target");
     if (!field) {
@@ -87,6 +102,20 @@ PyObject * fun4_interfaces__srv__mode__request__convert_to_py(void * raw_ros_mes
     }
   }
   fun4_interfaces__srv__Mode_Request * ros_message = (fun4_interfaces__srv__Mode_Request *)raw_ros_message;
+  {  // request_mode
+    PyObject * field = NULL;
+    field = std_msgs__msg__int16__convert_to_py(&ros_message->request_mode);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "request_mode", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // request_target
     PyObject * field = NULL;
     field = std_msgs__msg__bool__convert_to_py(&ros_message->request_target);
@@ -124,6 +153,10 @@ ROSIDL_GENERATOR_C_IMPORT
 bool std_msgs__msg__bool__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * std_msgs__msg__bool__convert_to_py(void * raw_ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+bool std_msgs__msg__float32_multi_array__convert_from_py(PyObject * _pymsg, void * _ros_message);
+ROSIDL_GENERATOR_C_IMPORT
+PyObject * std_msgs__msg__float32_multi_array__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool fun4_interfaces__srv__mode__response__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -158,12 +191,23 @@ bool fun4_interfaces__srv__mode__response__convert_from_py(PyObject * _pymsg, vo
     assert(strncmp("fun4_interfaces.srv._mode.Mode_Response", full_classname_dest, 39) == 0);
   }
   fun4_interfaces__srv__Mode_Response * ros_message = _ros_message;
+  {  // response_mode
+    PyObject * field = PyObject_GetAttrString(_pymsg, "response_mode");
+    if (!field) {
+      return false;
+    }
+    if (!std_msgs__msg__bool__convert_from_py(field, &ros_message->response_mode)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
   {  // response_target
     PyObject * field = PyObject_GetAttrString(_pymsg, "response_target");
     if (!field) {
       return false;
     }
-    if (!std_msgs__msg__bool__convert_from_py(field, &ros_message->response_target)) {
+    if (!std_msgs__msg__float32_multi_array__convert_from_py(field, &ros_message->response_target)) {
       Py_DECREF(field);
       return false;
     }
@@ -191,9 +235,23 @@ PyObject * fun4_interfaces__srv__mode__response__convert_to_py(void * raw_ros_me
     }
   }
   fun4_interfaces__srv__Mode_Response * ros_message = (fun4_interfaces__srv__Mode_Response *)raw_ros_message;
+  {  // response_mode
+    PyObject * field = NULL;
+    field = std_msgs__msg__bool__convert_to_py(&ros_message->response_mode);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "response_mode", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // response_target
     PyObject * field = NULL;
-    field = std_msgs__msg__bool__convert_to_py(&ros_message->response_target);
+    field = std_msgs__msg__float32_multi_array__convert_to_py(&ros_message->response_target);
     if (!field) {
       return NULL;
     }

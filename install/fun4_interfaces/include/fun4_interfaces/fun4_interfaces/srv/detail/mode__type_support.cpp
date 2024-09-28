@@ -37,7 +37,24 @@ void Mode_Request_fini_function(void * message_memory)
   typed_message->~Mode_Request();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Mode_Request_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Mode_Request_message_member_array[2] = {
+  {
+    "request_mode",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Int16>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(fun4_interfaces::srv::Mode_Request, request_mode),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "request_target",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -60,7 +77,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Mode_Request_
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Mode_Request_message_members = {
   "fun4_interfaces::srv",  // message namespace
   "Mode_Request",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(fun4_interfaces::srv::Mode_Request),
   Mode_Request_message_member_array,  // message members
   Mode_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -156,12 +173,29 @@ void Mode_Response_fini_function(void * message_memory)
   typed_message->~Mode_Response();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Mode_Response_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Mode_Response_message_member_array[2] = {
+  {
+    "response_mode",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Bool>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(fun4_interfaces::srv::Mode_Response, response_mode),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "response_target",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Bool>(),  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<std_msgs::msg::Float32MultiArray>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -179,7 +213,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Mode_Response
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Mode_Response_message_members = {
   "fun4_interfaces::srv",  // message namespace
   "Mode_Response",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(fun4_interfaces::srv::Mode_Response),
   Mode_Response_message_member_array,  // message members
   Mode_Response_init_function,  // function to initialize message memory (memory has to be allocated)

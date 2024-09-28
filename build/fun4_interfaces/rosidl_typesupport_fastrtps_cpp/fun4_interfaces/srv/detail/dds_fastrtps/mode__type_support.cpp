@@ -23,6 +23,30 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 bool cdr_serialize(
+  const std_msgs::msg::Int16 &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  std_msgs::msg::Int16 &);
+size_t get_serialized_size(
+  const std_msgs::msg::Int16 &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Int16(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace std_msgs
+
+namespace std_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
   const std_msgs::msg::Bool &,
   eprosima::fastcdr::Cdr &);
 bool cdr_deserialize(
@@ -56,6 +80,10 @@ cdr_serialize(
   const fun4_interfaces::srv::Mode_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: request_mode
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.request_mode,
+    cdr);
   // Member: request_target
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.request_target,
@@ -69,6 +97,10 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   fun4_interfaces::srv::Mode_Request & ros_message)
 {
+  // Member: request_mode
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.request_mode);
+
   // Member: request_target
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.request_target);
@@ -89,6 +121,11 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: request_mode
+
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.request_mode, current_alignment);
   // Member: request_target
 
   current_alignment +=
@@ -117,6 +154,25 @@ max_serialized_size_Mode_Request(
   full_bounded = true;
   is_plain = true;
 
+
+  // Member: request_mode
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Int16(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
 
   // Member: request_target
   {
@@ -267,6 +323,30 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cp
 // forward declaration of message dependencies and their conversion functions
 // functions for std_msgs::msg::Bool already declared above
 
+namespace std_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const std_msgs::msg::Float32MultiArray &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  std_msgs::msg::Float32MultiArray &);
+size_t get_serialized_size(
+  const std_msgs::msg::Float32MultiArray &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Float32MultiArray(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace std_msgs
+
 
 namespace fun4_interfaces
 {
@@ -283,6 +363,10 @@ cdr_serialize(
   const fun4_interfaces::srv::Mode_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: response_mode
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.response_mode,
+    cdr);
   // Member: response_target
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.response_target,
@@ -296,6 +380,10 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   fun4_interfaces::srv::Mode_Response & ros_message)
 {
+  // Member: response_mode
+  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.response_mode);
+
   // Member: response_target
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.response_target);
@@ -316,6 +404,11 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: response_mode
+
+  current_alignment +=
+    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.response_mode, current_alignment);
   // Member: response_target
 
   current_alignment +=
@@ -345,7 +438,7 @@ max_serialized_size_Mode_Response(
   is_plain = true;
 
 
-  // Member: response_target
+  // Member: response_mode
   {
     size_t array_size = 1;
 
@@ -356,6 +449,25 @@ max_serialized_size_Mode_Response(
       bool inner_is_plain;
       size_t inner_size =
         std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Bool(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: response_target
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size =
+        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Float32MultiArray(
         inner_full_bounded, inner_is_plain, current_alignment);
       last_member_size += inner_size;
       current_alignment += inner_size;

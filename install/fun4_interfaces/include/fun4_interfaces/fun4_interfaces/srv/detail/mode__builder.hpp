@@ -24,13 +24,29 @@ namespace builder
 class Init_Mode_Request_request_target
 {
 public:
-  Init_Mode_Request_request_target()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_Mode_Request_request_target(::fun4_interfaces::srv::Mode_Request & msg)
+  : msg_(msg)
   {}
   ::fun4_interfaces::srv::Mode_Request request_target(::fun4_interfaces::srv::Mode_Request::_request_target_type arg)
   {
     msg_.request_target = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::fun4_interfaces::srv::Mode_Request msg_;
+};
+
+class Init_Mode_Request_request_mode
+{
+public:
+  Init_Mode_Request_request_mode()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Mode_Request_request_target request_mode(::fun4_interfaces::srv::Mode_Request::_request_mode_type arg)
+  {
+    msg_.request_mode = std::move(arg);
+    return Init_Mode_Request_request_target(msg_);
   }
 
 private:
@@ -48,7 +64,7 @@ template<>
 inline
 auto build<::fun4_interfaces::srv::Mode_Request>()
 {
-  return fun4_interfaces::srv::builder::Init_Mode_Request_request_target();
+  return fun4_interfaces::srv::builder::Init_Mode_Request_request_mode();
 }
 
 }  // namespace fun4_interfaces
@@ -66,13 +82,29 @@ namespace builder
 class Init_Mode_Response_response_target
 {
 public:
-  Init_Mode_Response_response_target()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_Mode_Response_response_target(::fun4_interfaces::srv::Mode_Response & msg)
+  : msg_(msg)
   {}
   ::fun4_interfaces::srv::Mode_Response response_target(::fun4_interfaces::srv::Mode_Response::_response_target_type arg)
   {
     msg_.response_target = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::fun4_interfaces::srv::Mode_Response msg_;
+};
+
+class Init_Mode_Response_response_mode
+{
+public:
+  Init_Mode_Response_response_mode()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Mode_Response_response_target response_mode(::fun4_interfaces::srv::Mode_Response::_response_mode_type arg)
+  {
+    msg_.response_mode = std::move(arg);
+    return Init_Mode_Response_response_target(msg_);
   }
 
 private:
@@ -90,7 +122,7 @@ template<>
 inline
 auto build<::fun4_interfaces::srv::Mode_Response>()
 {
-  return fun4_interfaces::srv::builder::Init_Mode_Response_response_target();
+  return fun4_interfaces::srv::builder::Init_Mode_Response_response_mode();
 }
 
 }  // namespace fun4_interfaces

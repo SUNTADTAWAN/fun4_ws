@@ -35,6 +35,7 @@ extern "C"
 #endif
 
 #include "std_msgs/msg/detail/bool__functions.h"  // request_target
+#include "std_msgs/msg/detail/int16__functions.h"  // request_mode
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
@@ -51,6 +52,20 @@ size_t max_serialized_size_std_msgs__msg__Bool(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Bool)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
+size_t get_serialized_size_std_msgs__msg__Int16(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
+size_t max_serialized_size_std_msgs__msg__Int16(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Int16)();
 
 
 using _Mode_Request__ros_msg_type = fun4_interfaces__srv__Mode_Request;
@@ -64,6 +79,20 @@ static bool _Mode_Request__cdr_serialize(
     return false;
   }
   const _Mode_Request__ros_msg_type * ros_message = static_cast<const _Mode_Request__ros_msg_type *>(untyped_ros_message);
+  // Field name: request_mode
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Int16
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->request_mode, cdr))
+    {
+      return false;
+    }
+  }
+
   // Field name: request_target
   {
     const message_type_support_callbacks_t * callbacks =
@@ -90,6 +119,20 @@ static bool _Mode_Request__cdr_deserialize(
     return false;
   }
   _Mode_Request__ros_msg_type * ros_message = static_cast<_Mode_Request__ros_msg_type *>(untyped_ros_message);
+  // Field name: request_mode
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Int16
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->request_mode))
+    {
+      return false;
+    }
+  }
+
   // Field name: request_target
   {
     const message_type_support_callbacks_t * callbacks =
@@ -121,6 +164,10 @@ size_t get_serialized_size_fun4_interfaces__srv__Mode_Request(
   (void)padding;
   (void)wchar_size;
 
+  // field.name request_mode
+
+  current_alignment += get_serialized_size_std_msgs__msg__Int16(
+    &(ros_message->request_mode), current_alignment);
   // field.name request_target
 
   current_alignment += get_serialized_size_std_msgs__msg__Bool(
@@ -154,6 +201,25 @@ size_t max_serialized_size_fun4_interfaces__srv__Mode_Request(
   full_bounded = true;
   is_plain = true;
 
+  // member: request_mode
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_std_msgs__msg__Int16(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
   // member: request_target
   {
     size_t array_size = 1;
@@ -271,7 +337,8 @@ extern "C"
 #endif
 
 // already included above
-// #include "std_msgs/msg/detail/bool__functions.h"  // response_target
+// #include "std_msgs/msg/detail/bool__functions.h"  // response_mode
+#include "std_msgs/msg/detail/float32_multi_array__functions.h"  // response_target
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
@@ -288,6 +355,20 @@ size_t max_serialized_size_std_msgs__msg__Bool(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Bool)();
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
+size_t get_serialized_size_std_msgs__msg__Float32MultiArray(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
+size_t max_serialized_size_std_msgs__msg__Float32MultiArray(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_fun4_interfaces
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray)();
 
 
 using _Mode_Response__ros_msg_type = fun4_interfaces__srv__Mode_Response;
@@ -301,12 +382,26 @@ static bool _Mode_Response__cdr_serialize(
     return false;
   }
   const _Mode_Response__ros_msg_type * ros_message = static_cast<const _Mode_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: response_target
+  // Field name: response_mode
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
         rosidl_typesupport_fastrtps_c, std_msgs, msg, Bool
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->response_mode, cdr))
+    {
+      return false;
+    }
+  }
+
+  // Field name: response_target
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
       )()->data);
     if (!callbacks->cdr_serialize(
         &ros_message->response_target, cdr))
@@ -327,12 +422,26 @@ static bool _Mode_Response__cdr_deserialize(
     return false;
   }
   _Mode_Response__ros_msg_type * ros_message = static_cast<_Mode_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: response_target
+  // Field name: response_mode
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
         rosidl_typesupport_fastrtps_c, std_msgs, msg, Bool
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->response_mode))
+    {
+      return false;
+    }
+  }
+
+  // Field name: response_target
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, std_msgs, msg, Float32MultiArray
       )()->data);
     if (!callbacks->cdr_deserialize(
         cdr, &ros_message->response_target))
@@ -358,9 +467,13 @@ size_t get_serialized_size_fun4_interfaces__srv__Mode_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name response_target
+  // field.name response_mode
 
   current_alignment += get_serialized_size_std_msgs__msg__Bool(
+    &(ros_message->response_mode), current_alignment);
+  // field.name response_target
+
+  current_alignment += get_serialized_size_std_msgs__msg__Float32MultiArray(
     &(ros_message->response_target), current_alignment);
 
   return current_alignment - initial_alignment;
@@ -391,7 +504,7 @@ size_t max_serialized_size_fun4_interfaces__srv__Mode_Response(
   full_bounded = true;
   is_plain = true;
 
-  // member: response_target
+  // member: response_mode
   {
     size_t array_size = 1;
 
@@ -403,6 +516,25 @@ size_t max_serialized_size_fun4_interfaces__srv__Mode_Response(
       size_t inner_size;
       inner_size =
         max_serialized_size_std_msgs__msg__Bool(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+  // member: response_target
+  {
+    size_t array_size = 1;
+
+
+    last_member_size = 0;
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      size_t inner_size;
+      inner_size =
+        max_serialized_size_std_msgs__msg__Float32MultiArray(
         inner_full_bounded, inner_is_plain, current_alignment);
       last_member_size += inner_size;
       current_alignment += inner_size;

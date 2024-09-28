@@ -104,6 +104,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/tadtawan/fun4_ws/src/example_description/launch"
     "/home/tadtawan/fun4_ws/src/example_description/meshes"
     "/home/tadtawan/fun4_ws/src/example_description/robot"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts"
     )
 endif()
 

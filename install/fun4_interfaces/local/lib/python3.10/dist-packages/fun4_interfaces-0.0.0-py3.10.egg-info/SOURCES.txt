@@ -4,3 +4,5 @@ fun4_interfaces.egg-info/PKG-INFO
 fun4_interfaces.egg-info/SOURCES.txt
 fun4_interfaces.egg-info/dependency_links.txt
 fun4_interfaces.egg-info/top_level.txt
+fun4_interfaces/srv/__init__.py
+fun4_interfaces/srv/_mode.py

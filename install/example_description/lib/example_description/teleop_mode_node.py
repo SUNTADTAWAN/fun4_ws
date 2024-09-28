@@ -6,6 +6,8 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from std_msgs.msg import String
 
+from std_msgs.msg import Bool,Int16
+from fun4_interfaces.srv import Mode
 
 
 class DummyNode(Node):
@@ -14,9 +16,15 @@ class DummyNode(Node):
         self.create_subscription(Twist,'/end_effector',self.teleop_callback,10)
         self.singularity_send = self.create_publisher(String,'/singularity',10)
 
-    def teleop_callback(self):
-        
-        pass
+        self.create_service(Mode,'/request_mode',self.request_mode_callback)
+    
+    def request_Mode_callback(self,request:Mode.Request , response:Mode.Response):
+        if request.request_mode.data:
+            if request.request_mode.data == 2:
+                response.response_mode.data = True
+                self.get_logger().info(response.response_mode.data)
+                return response
+            
 
 def main(args=None):
     rclpy.init(args=args)
