@@ -1,0 +1,5 @@
+std_msgs/Int64 mode
+std_msgs/Bool request_targaet
+---
+std_msgs/Bool solution
+std_msgs/Bool response_targaet

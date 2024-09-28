@@ -16,6 +16,7 @@
 /home/tadtawan/fun4_ws/install/example_description/lib/example_description/cpp_node_test
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/config/display.rviz
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/launch/simple_display.launch.py
+/home/tadtawan/fun4_ws/install/example_description/share/example_description/launch/fun4.launch.py
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/launch/fun.launch.py
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/meshes/link_0.stl
 /home/tadtawan/fun4_ws/install/example_description/share/example_description/meshes/link_2.stl
