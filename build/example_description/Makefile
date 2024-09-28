@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tadtawan/fun4_ws/src
+CMAKE_SOURCE_DIR = /home/tadtawan/fun4_ws/src/example_description
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/tadtawan/fun4_ws/build/example_description

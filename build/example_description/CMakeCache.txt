@@ -335,7 +335,7 @@ example_description_BINARY_DIR:STATIC=/home/tadtawan/fun4_ws/build/example_descr
 example_description_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-example_description_SOURCE_DIR:STATIC=/home/tadtawan/fun4_ws/src
+example_description_SOURCE_DIR:STATIC=/home/tadtawan/fun4_ws/src/example_description
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
@@ -561,7 +561,7 @@ CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/tadtawan/fun4_ws/src
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/tadtawan/fun4_ws/src/example_description
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

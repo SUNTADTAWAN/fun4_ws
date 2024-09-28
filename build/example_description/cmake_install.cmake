@@ -1,4 +1,4 @@
-# Install script for directory: /home/tadtawan/fun4_ws/src
+# Install script for directory: /home/tadtawan/fun4_ws/src/example_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -55,7 +55,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/example_description" TYPE DIRECTORY FILES "/home/tadtawan/fun4_ws/src/example_description/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/local/lib/python3.10/dist-packages/example_description" TYPE DIRECTORY FILES "/home/tadtawan/fun4_ws/src/example_description/example_description/" REGEX "/[^/]*\\.pyc$" EXCLUDE REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -68,13 +68,13 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/example_description" TYPE PROGRAM FILES
-    "/home/tadtawan/fun4_ws/src/scripts/dummy_script.py"
-    "/home/tadtawan/fun4_ws/src/scripts/jointstate_script.py"
-    "/home/tadtawan/fun4_ws/src/scripts/controller_node.py"
-    "/home/tadtawan/fun4_ws/src/scripts/random_node.py"
-    "/home/tadtawan/fun4_ws/src/scripts/auto_mode_node.py"
-    "/home/tadtawan/fun4_ws/src/scripts/ipk_mode_node.py"
-    "/home/tadtawan/fun4_ws/src/scripts/teleop_mode_node.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/dummy_script.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/jointstate_script.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/controller_node.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/random_node.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/auto_mode_node.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/ipk_mode_node.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/teleop_mode_node.py"
     )
 endif()
 
@@ -100,10 +100,10 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/example_description" TYPE DIRECTORY FILES
-    "/home/tadtawan/fun4_ws/src/config"
-    "/home/tadtawan/fun4_ws/src/launch"
-    "/home/tadtawan/fun4_ws/src/meshes"
-    "/home/tadtawan/fun4_ws/src/robot"
+    "/home/tadtawan/fun4_ws/src/example_description/config"
+    "/home/tadtawan/fun4_ws/src/example_description/launch"
+    "/home/tadtawan/fun4_ws/src/example_description/meshes"
+    "/home/tadtawan/fun4_ws/src/example_description/robot"
     )
 endif()
 
@@ -163,7 +163,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/example_description" TYPE FILE FILES "/home/tadtawan/fun4_ws/src/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/example_description" TYPE FILE FILES "/home/tadtawan/fun4_ws/src/example_description/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

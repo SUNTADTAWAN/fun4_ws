@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tadtawan/fun4_ws/src
+CMAKE_SOURCE_DIR = /home/tadtawan/fun4_ws/src/example_description
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/tadtawan/fun4_ws/build/example_description
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_example_description.dir/compiler_depe
 include CMakeFiles/ament_cmake_python_copy_example_description.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_example_description:
-	/usr/bin/cmake -E copy_directory /home/tadtawan/fun4_ws/src/example_description /home/tadtawan/fun4_ws/build/example_description/ament_cmake_python/example_description/example_description
+	/usr/bin/cmake -E copy_directory /home/tadtawan/fun4_ws/src/example_description/example_description /home/tadtawan/fun4_ws/build/example_description/ament_cmake_python/example_description/example_description
 
 ament_cmake_python_copy_example_description: CMakeFiles/ament_cmake_python_copy_example_description
 ament_cmake_python_copy_example_description: CMakeFiles/ament_cmake_python_copy_example_description.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_example_description.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_example_description.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_example_description.dir/depend:
-	cd /home/tadtawan/fun4_ws/build/example_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tadtawan/fun4_ws/src /home/tadtawan/fun4_ws/src /home/tadtawan/fun4_ws/build/example_description /home/tadtawan/fun4_ws/build/example_description /home/tadtawan/fun4_ws/build/example_description/CMakeFiles/ament_cmake_python_copy_example_description.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tadtawan/fun4_ws/build/example_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tadtawan/fun4_ws/src/example_description /home/tadtawan/fun4_ws/src/example_description /home/tadtawan/fun4_ws/build/example_description /home/tadtawan/fun4_ws/build/example_description /home/tadtawan/fun4_ws/build/example_description/CMakeFiles/ament_cmake_python_copy_example_description.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_example_description.dir/depend
 

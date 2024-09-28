@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/tadtawan/fun4_ws/src
+# Source directory: /home/tadtawan/fun4_ws/src/example_description
 # Build directory: /home/tadtawan/fun4_ws/build/example_description
 # 
 # This file includes the relevant testing commands required for 
