@@ -19,11 +19,20 @@
 
 5. Install numpy
 
-### 2. Install Package
+### 2. Setup Environmaent
 1. clone Package
    ```sh
    git clone https://github.com/SUNTADTAWAN/fun4_ws.git
    ```
+2. Build Package
+   ```sh
+   colcon build
+   ```
+3. Source
+  ```sh
+  source install/setup.bash
+  ```
+
 ### 3. Run
 1. run launch file
    ```sh
