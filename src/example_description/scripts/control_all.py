@@ -188,14 +188,17 @@ class ControlallNode(Node):
 
     def request_mode_callback(self,request:Mode.Request , response:Mode.Response):
         if request.request_mode.data == 1:
+            self.get_logger().info(f'Mode 1 IPK Mode')
             self.mode = 1
             response.response_mode.data = True
             return response
         elif request.request_mode.data == 2:
+            self.get_logger().info(f'Mode 2 Teleop Mode')
             self.mode = 2
             response.response_mode.data = True
             return response
         elif request.request_mode.data == 3:
+            self.get_logger().info(f'Mode 3 Auto Mode')
             self.mode = 3
             response.response_mode.data = True
             return response
