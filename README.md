@@ -1,7 +1,7 @@
 # FRA501 FUN4 6531
 
 ### Architecture diagram
-![image](https://github.com/user-attachments/assets/915c7643-38a0-4827-bfb6-981e79aa3787)
+![image](https://github.com/user-attachments/assets/41e547a7-8a3d-4282-be49-6382faf9a942)
 
 
 ### Work space
