@@ -1,7 +1,7 @@
 # FRA501 FUN4 6531
 
 ### Work space
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/18a85e6d-38cd-45fb-9c47-1a4b07cfadec)
 
 
 ### 1. Install Environment
