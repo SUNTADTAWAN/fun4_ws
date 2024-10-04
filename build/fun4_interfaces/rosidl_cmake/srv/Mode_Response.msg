@@ -1,3 +1,3 @@
 
 std_msgs/Bool response_mode
-std_msgs/Float32MultiArray response_target
+

@@ -49,24 +49,35 @@ def generate_launch_description():
         executable='joint_state_publisher_gui'
     )
 
-    controller = Node(
-        package='example_description',
-        executable='controller_node.py'
-    )
+    # control = Node(
+    #     package='example_description',
+    #     executable='control.py'
+    # )
 
-    ipk = Node(
-        package='example_description',
-        executable='ipk_mode_node.py'
-    )
+    # scheduler = Node(
+    #     package='example_description',
+    #     executable='scheduler.py'
+    # )
 
-    teleop = Node(
-        package='example_description',
-        executable='teleop_mode_node.py'
-    )
+    # teleop = Node(
+    #     package='example_description',
+    #     executable='teleop_mode_node.py'
+    # )
 
-    auto = Node(
+    # auto = Node(
+    #     package='example_description',
+    #     executable='auto_mode_node.py'
+    # )
+
+        # control = Node(
+    #     package='example_description',
+    #     executable='control.py'
+    # )
+
+
+    controlall = Node(
         package='example_description',
-        executable='auto_mode_node.py'
+        executable='control_all.py'
     )
 
     random = Node(
@@ -78,12 +89,15 @@ def generate_launch_description():
     
     launch_description.add_action(rviz)
     launch_description.add_action(robot_state_publisher)
-    launch_description.add_action(joint_state_publisher_gui)
-
-    launch_description.add_action(controller)
-    launch_description.add_action(ipk)
-    launch_description.add_action(teleop)
-    launch_description.add_action(auto)
+    # launch_description.add_action(joint_state_publisher_gui)
+    launch_description.add_action(controlall)
+    # launch_description.add_action(control)
     launch_description.add_action(random)
+    # launch_description.add_action(scheduler)
+    # launch_description.add_action(controller)
+    # launch_description.add_action(ipk)
+    # launch_description.add_action(teleop)
+    # launch_description.add_action(auto)
+    # launch_description.add_action(random)
     
     return launch_description

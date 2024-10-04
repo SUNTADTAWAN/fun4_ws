@@ -40,30 +40,6 @@ max_serialized_size_Int16(
 }  // namespace msg
 }  // namespace std_msgs
 
-namespace std_msgs
-{
-namespace msg
-{
-namespace typesupport_fastrtps_cpp
-{
-bool cdr_serialize(
-  const std_msgs::msg::Bool &,
-  eprosima::fastcdr::Cdr &);
-bool cdr_deserialize(
-  eprosima::fastcdr::Cdr &,
-  std_msgs::msg::Bool &);
-size_t get_serialized_size(
-  const std_msgs::msg::Bool &,
-  size_t current_alignment);
-size_t
-max_serialized_size_Bool(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-}  // namespace typesupport_fastrtps_cpp
-}  // namespace msg
-}  // namespace std_msgs
-
 
 namespace fun4_interfaces
 {
@@ -84,10 +60,6 @@ cdr_serialize(
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.request_mode,
     cdr);
-  // Member: request_target
-  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
-    ros_message.request_target,
-    cdr);
   return true;
 }
 
@@ -100,10 +72,6 @@ cdr_deserialize(
   // Member: request_mode
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.request_mode);
-
-  // Member: request_target
-  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-    cdr, ros_message.request_target);
 
   return true;
 }
@@ -126,11 +94,6 @@ get_serialized_size(
   current_alignment +=
     std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.request_mode, current_alignment);
-  // Member: request_target
-
-  current_alignment +=
-    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
-    ros_message.request_target, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -174,25 +137,6 @@ max_serialized_size_Mode_Request(
     }
   }
 
-  // Member: request_target
-  {
-    size_t array_size = 1;
-
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Bool(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -201,7 +145,7 @@ max_serialized_size_Mode_Request(
     using DataType = fun4_interfaces::srv::Mode_Request;
     is_plain =
       (
-      offsetof(DataType, request_target) +
+      offsetof(DataType, request_mode) +
       last_member_size
       ) == ret_val;
   }
@@ -321,8 +265,6 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_cp
 
 
 // forward declaration of message dependencies and their conversion functions
-// functions for std_msgs::msg::Bool already declared above
-
 namespace std_msgs
 {
 namespace msg
@@ -330,16 +272,16 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 bool cdr_serialize(
-  const std_msgs::msg::Float32MultiArray &,
+  const std_msgs::msg::Bool &,
   eprosima::fastcdr::Cdr &);
 bool cdr_deserialize(
   eprosima::fastcdr::Cdr &,
-  std_msgs::msg::Float32MultiArray &);
+  std_msgs::msg::Bool &);
 size_t get_serialized_size(
-  const std_msgs::msg::Float32MultiArray &,
+  const std_msgs::msg::Bool &,
   size_t current_alignment);
 size_t
-max_serialized_size_Float32MultiArray(
+max_serialized_size_Bool(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);
@@ -367,10 +309,6 @@ cdr_serialize(
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.response_mode,
     cdr);
-  // Member: response_target
-  std_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
-    ros_message.response_target,
-    cdr);
   return true;
 }
 
@@ -383,10 +321,6 @@ cdr_deserialize(
   // Member: response_mode
   std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.response_mode);
-
-  // Member: response_target
-  std_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-    cdr, ros_message.response_target);
 
   return true;
 }
@@ -409,11 +343,6 @@ get_serialized_size(
   current_alignment +=
     std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.response_mode, current_alignment);
-  // Member: response_target
-
-  current_alignment +=
-    std_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
-    ros_message.response_target, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -457,25 +386,6 @@ max_serialized_size_Mode_Response(
     }
   }
 
-  // Member: response_target
-  {
-    size_t array_size = 1;
-
-
-    last_member_size = 0;
-    for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      size_t inner_size =
-        std_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Float32MultiArray(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      last_member_size += inner_size;
-      current_alignment += inner_size;
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
-    }
-  }
-
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -484,7 +394,7 @@ max_serialized_size_Mode_Response(
     using DataType = fun4_interfaces::srv::Mode_Response;
     is_plain =
       (
-      offsetof(DataType, response_target) +
+      offsetof(DataType, response_mode) +
       last_member_size
       ) == ret_val;
   }

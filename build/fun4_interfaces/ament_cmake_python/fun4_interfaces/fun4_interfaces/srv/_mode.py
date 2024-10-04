@@ -42,10 +42,6 @@ class Metaclass_Mode_Request(type):
             cls._TYPE_SUPPORT = module.type_support_msg__srv__mode__request
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__srv__mode__request
 
-            from std_msgs.msg import Bool
-            if Bool.__class__._TYPE_SUPPORT is None:
-                Bool.__class__.__import_type_support__()
-
             from std_msgs.msg import Int16
             if Int16.__class__._TYPE_SUPPORT is None:
                 Int16.__class__.__import_type_support__()
@@ -64,17 +60,14 @@ class Mode_Request(metaclass=Metaclass_Mode_Request):
 
     __slots__ = [
         '_request_mode',
-        '_request_target',
     ]
 
     _fields_and_field_types = {
         'request_mode': 'std_msgs/Int16',
-        'request_target': 'std_msgs/Bool',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Int16'),  # noqa: E501
-        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Bool'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -83,8 +76,6 @@ class Mode_Request(metaclass=Metaclass_Mode_Request):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Int16
         self.request_mode = kwargs.get('request_mode', Int16())
-        from std_msgs.msg import Bool
-        self.request_target = kwargs.get('request_target', Bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -117,8 +108,6 @@ class Mode_Request(metaclass=Metaclass_Mode_Request):
             return False
         if self.request_mode != other.request_mode:
             return False
-        if self.request_target != other.request_target:
-            return False
         return True
 
     @classmethod
@@ -139,20 +128,6 @@ class Mode_Request(metaclass=Metaclass_Mode_Request):
                 isinstance(value, Int16), \
                 "The 'request_mode' field must be a sub message of type 'Int16'"
         self._request_mode = value
-
-    @builtins.property
-    def request_target(self):
-        """Message field 'request_target'."""
-        return self._request_target
-
-    @request_target.setter
-    def request_target(self, value):
-        if __debug__:
-            from std_msgs.msg import Bool
-            assert \
-                isinstance(value, Bool), \
-                "The 'request_target' field must be a sub message of type 'Bool'"
-        self._request_target = value
 
 
 # Import statements for member types
@@ -200,10 +175,6 @@ class Metaclass_Mode_Response(type):
             if Bool.__class__._TYPE_SUPPORT is None:
                 Bool.__class__.__import_type_support__()
 
-            from std_msgs.msg import Float32MultiArray
-            if Float32MultiArray.__class__._TYPE_SUPPORT is None:
-                Float32MultiArray.__class__.__import_type_support__()
-
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -218,17 +189,14 @@ class Mode_Response(metaclass=Metaclass_Mode_Response):
 
     __slots__ = [
         '_response_mode',
-        '_response_target',
     ]
 
     _fields_and_field_types = {
         'response_mode': 'std_msgs/Bool',
-        'response_target': 'std_msgs/Float32MultiArray',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Bool'),  # noqa: E501
-        rosidl_parser.definition.NamespacedType(['std_msgs', 'msg'], 'Float32MultiArray'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -237,8 +205,6 @@ class Mode_Response(metaclass=Metaclass_Mode_Response):
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         from std_msgs.msg import Bool
         self.response_mode = kwargs.get('response_mode', Bool())
-        from std_msgs.msg import Float32MultiArray
-        self.response_target = kwargs.get('response_target', Float32MultiArray())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -271,8 +237,6 @@ class Mode_Response(metaclass=Metaclass_Mode_Response):
             return False
         if self.response_mode != other.response_mode:
             return False
-        if self.response_target != other.response_target:
-            return False
         return True
 
     @classmethod
@@ -293,20 +257,6 @@ class Mode_Response(metaclass=Metaclass_Mode_Response):
                 isinstance(value, Bool), \
                 "The 'response_mode' field must be a sub message of type 'Bool'"
         self._response_mode = value
-
-    @builtins.property
-    def response_target(self):
-        """Message field 'response_target'."""
-        return self._response_target
-
-    @response_target.setter
-    def response_target(self, value):
-        if __debug__:
-            from std_msgs.msg import Float32MultiArray
-            assert \
-                isinstance(value, Float32MultiArray), \
-                "The 'response_target' field must be a sub message of type 'Float32MultiArray'"
-        self._response_target = value
 
 
 class Metaclass_Mode(type):

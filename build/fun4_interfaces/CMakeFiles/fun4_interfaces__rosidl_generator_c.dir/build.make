@@ -83,6 +83,7 @@ rosidl_generator_c/fun4_interfaces/srv/mode.h: /opt/ros/humble/share/rosidl_gene
 rosidl_generator_c/fun4_interfaces/srv/mode.h: /opt/ros/humble/share/rosidl_generator_c/resource/msg__type_support.h.em
 rosidl_generator_c/fun4_interfaces/srv/mode.h: /opt/ros/humble/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/fun4_interfaces/srv/mode.h: rosidl_adapter/fun4_interfaces/srv/Mode.idl
+rosidl_generator_c/fun4_interfaces/srv/mode.h: rosidl_adapter/fun4_interfaces/srv/Random.idl
 rosidl_generator_c/fun4_interfaces/srv/mode.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_c/fun4_interfaces/srv/mode.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_c/fun4_interfaces/srv/mode.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -127,8 +128,23 @@ rosidl_generator_c/fun4_interfaces/srv/detail/mode__struct.h: rosidl_generator_c
 rosidl_generator_c/fun4_interfaces/srv/detail/mode__type_support.h: rosidl_generator_c/fun4_interfaces/srv/mode.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/fun4_interfaces/srv/detail/mode__type_support.h
 
+rosidl_generator_c/fun4_interfaces/srv/random.h: rosidl_generator_c/fun4_interfaces/srv/mode.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/fun4_interfaces/srv/random.h
+
+rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.h: rosidl_generator_c/fun4_interfaces/srv/mode.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.h
+
+rosidl_generator_c/fun4_interfaces/srv/detail/random__struct.h: rosidl_generator_c/fun4_interfaces/srv/mode.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/fun4_interfaces/srv/detail/random__struct.h
+
+rosidl_generator_c/fun4_interfaces/srv/detail/random__type_support.h: rosidl_generator_c/fun4_interfaces/srv/mode.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/fun4_interfaces/srv/detail/random__type_support.h
+
 rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c: rosidl_generator_c/fun4_interfaces/srv/mode.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c
+
+rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c: rosidl_generator_c/fun4_interfaces/srv/mode.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c
 
 CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.o: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.o: rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c
@@ -144,21 +160,37 @@ CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_inter
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c -o CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.s
 
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o: rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o -MF CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o.d -o CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o -c /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c
+
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c > CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.i
+
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c -o CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.s
+
 # Object files for target fun4_interfaces__rosidl_generator_c
 fun4_interfaces__rosidl_generator_c_OBJECTS = \
-"CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.o"
+"CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.o" \
+"CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o"
 
 # External object files for target fun4_interfaces__rosidl_generator_c
 fun4_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libfun4_interfaces__rosidl_generator_c.so: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.c.o
+libfun4_interfaces__rosidl_generator_c.so: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c.o
 libfun4_interfaces__rosidl_generator_c.so: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/build.make
 libfun4_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 libfun4_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libfun4_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libfun4_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libfun4_interfaces__rosidl_generator_c.so: CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libfun4_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libfun4_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -173,7 +205,12 @@ CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fu
 CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/detail/mode__functions.h
 CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/detail/mode__struct.h
 CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/detail/mode__type_support.h
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.c
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/detail/random__functions.h
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/detail/random__struct.h
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/detail/random__type_support.h
 CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/mode.h
+CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/fun4_interfaces/srv/random.h
 	cd /home/tadtawan/fun4_ws/build/fun4_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tadtawan/fun4_ws/src/fun4_interfaces /home/tadtawan/fun4_ws/src/fun4_interfaces /home/tadtawan/fun4_ws/build/fun4_interfaces /home/tadtawan/fun4_ws/build/fun4_interfaces /home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fun4_interfaces__rosidl_generator_c.dir/depend
 

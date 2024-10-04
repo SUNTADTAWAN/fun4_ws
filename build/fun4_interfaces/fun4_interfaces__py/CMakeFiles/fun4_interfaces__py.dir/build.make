@@ -70,8 +70,10 @@ fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_int
 fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_c.c
 fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_mode.py
+fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_random.py
 fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/__init__.py
 fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_mode_s.c
+fun4_interfaces__py/CMakeFiles/fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_random_s.c
 
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -87,6 +89,7 @@ rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/fun4_interfaces/srv/Mode.idl
+rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/fun4_interfaces/srv/Random.idl
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -131,11 +134,17 @@ rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_c.c
 rosidl_generator_py/fun4_interfaces/srv/_mode.py: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/fun4_interfaces/srv/_mode.py
 
+rosidl_generator_py/fun4_interfaces/srv/_random.py: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/fun4_interfaces/srv/_random.py
+
 rosidl_generator_py/fun4_interfaces/srv/__init__.py: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/fun4_interfaces/srv/__init__.py
 
 rosidl_generator_py/fun4_interfaces/srv/_mode_s.c: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/fun4_interfaces/srv/_mode_s.c
+
+rosidl_generator_py/fun4_interfaces/srv/_random_s.c: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/fun4_interfaces/srv/_random_s.c
 
 fun4_interfaces__py: fun4_interfaces__py/CMakeFiles/fun4_interfaces__py
 fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_c.c
@@ -144,6 +153,8 @@ fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.r
 fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/__init__.py
 fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_mode.py
 fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_mode_s.c
+fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_random.py
+fun4_interfaces__py: rosidl_generator_py/fun4_interfaces/srv/_random_s.c
 fun4_interfaces__py: fun4_interfaces__py/CMakeFiles/fun4_interfaces__py.dir/build.make
 .PHONY : fun4_interfaces__py
 

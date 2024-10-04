@@ -3,7 +3,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__builder.hpp"
   "rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp"
   "rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__traits.hpp"
+  "rosidl_generator_cpp/fun4_interfaces/srv/detail/random__builder.hpp"
+  "rosidl_generator_cpp/fun4_interfaces/srv/detail/random__struct.hpp"
+  "rosidl_generator_cpp/fun4_interfaces/srv/detail/random__traits.hpp"
   "rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
+  "rosidl_generator_cpp/fun4_interfaces/srv/random.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

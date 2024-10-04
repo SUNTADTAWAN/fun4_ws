@@ -17,6 +17,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/srv/__init__.py" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/srv/_mode.py" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/srv/_mode_s.c" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/srv/_random.py" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/srv/_random_s.c" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_py/fun4_interfaces/_fun4_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

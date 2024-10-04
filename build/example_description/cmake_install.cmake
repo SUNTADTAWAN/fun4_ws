@@ -68,13 +68,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/example_description" TYPE PROGRAM FILES
-    "/home/tadtawan/fun4_ws/src/example_description/scripts/dummy_script.py"
-    "/home/tadtawan/fun4_ws/src/example_description/scripts/jointstate_script.py"
-    "/home/tadtawan/fun4_ws/src/example_description/scripts/controller_node.py"
     "/home/tadtawan/fun4_ws/src/example_description/scripts/random_node.py"
-    "/home/tadtawan/fun4_ws/src/example_description/scripts/auto_mode_node.py"
-    "/home/tadtawan/fun4_ws/src/example_description/scripts/ipk_mode_node.py"
-    "/home/tadtawan/fun4_ws/src/example_description/scripts/teleop_mode_node.py"
+    "/home/tadtawan/fun4_ws/src/example_description/scripts/control_all.py"
     )
 endif()
 

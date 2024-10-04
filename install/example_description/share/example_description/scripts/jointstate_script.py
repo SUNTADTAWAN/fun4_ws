@@ -17,6 +17,7 @@ class DummyNode(Node):
         self.name = ["joint_1", "joint_2", "joint_3"]
 
     def sim_loop(self):
+        
         msg = JointState()
         msg.header.stamp = self.get_clock().now().to_msg()
         q_d = [0.1, 0.1, 0.1]

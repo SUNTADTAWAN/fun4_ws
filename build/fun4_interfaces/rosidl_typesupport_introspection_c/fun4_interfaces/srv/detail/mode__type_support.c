@@ -17,10 +17,6 @@
 #include "std_msgs/msg/int16.h"
 // Member `request_mode`
 #include "std_msgs/msg/detail/int16__rosidl_typesupport_introspection_c.h"
-// Member `request_target`
-#include "std_msgs/msg/bool.h"
-// Member `request_target`
-#include "std_msgs/msg/detail/bool__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -41,7 +37,7 @@ void fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mod
   fun4_interfaces__srv__Mode_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_member_array[1] = {
   {
     "request_mode",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -58,30 +54,13 @@ static rosidl_typesupport_introspection_c__MessageMember fun4_interfaces__srv__M
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
-  },
-  {
-    "request_target",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message (initialized later)
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(fun4_interfaces__srv__Mode_Request, request_target),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_members = {
   "fun4_interfaces__srv",  // message namespace
   "Mode_Request",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(fun4_interfaces__srv__Mode_Request),
   fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_member_array,  // message members
   fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -101,8 +80,6 @@ const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, fun4_interfaces, srv, Mode_Request)() {
   fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Int16)();
-  fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_member_array[1].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Bool)();
   if (!fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_type_support_handle.typesupport_identifier) {
     fun4_interfaces__srv__Mode_Request__rosidl_typesupport_introspection_c__Mode_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
@@ -133,15 +110,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 
 // Include directives for member types
 // Member `response_mode`
-// already included above
-// #include "std_msgs/msg/bool.h"
+#include "std_msgs/msg/bool.h"
 // Member `response_mode`
-// already included above
-// #include "std_msgs/msg/detail/bool__rosidl_typesupport_introspection_c.h"
-// Member `response_target`
-#include "std_msgs/msg/float32_multi_array.h"
-// Member `response_target`
-#include "std_msgs/msg/detail/float32_multi_array__rosidl_typesupport_introspection_c.h"
+#include "std_msgs/msg/detail/bool__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -162,7 +133,7 @@ void fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mo
   fun4_interfaces__srv__Mode_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_member_array[1] = {
   {
     "response_mode",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -179,30 +150,13 @@ static rosidl_typesupport_introspection_c__MessageMember fun4_interfaces__srv__M
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
-  },
-  {
-    "response_target",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message (initialized later)
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(fun4_interfaces__srv__Mode_Response, response_target),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL,  // fetch(index, &value) function pointer
-    NULL,  // assign(index, value) function pointer
-    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_members = {
   "fun4_interfaces__srv",  // message namespace
   "Mode_Response",  // message name
-  2,  // number of fields
+  1,  // number of fields
   sizeof(fun4_interfaces__srv__Mode_Response),
   fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_member_array,  // message members
   fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -222,8 +176,6 @@ const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, fun4_interfaces, srv, Mode_Response)() {
   fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Bool)();
-  fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_member_array[1].members_ =
-    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, std_msgs, msg, Float32MultiArray)();
   if (!fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_type_support_handle.typesupport_identifier) {
     fun4_interfaces__srv__Mode_Response__rosidl_typesupport_introspection_c__Mode_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

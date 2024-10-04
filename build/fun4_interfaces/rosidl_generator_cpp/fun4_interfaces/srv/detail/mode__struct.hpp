@@ -18,8 +18,6 @@
 // Include directives for member types
 // Member 'request_mode'
 #include "std_msgs/msg/detail/int16__struct.hpp"
-// Member 'request_target'
-#include "std_msgs/msg/detail/bool__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__fun4_interfaces__srv__Mode_Request __attribute__((deprecated))
@@ -40,15 +38,13 @@ struct Mode_Request_
   using Type = Mode_Request_<ContainerAllocator>;
 
   explicit Mode_Request_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : request_mode(_init),
-    request_target(_init)
+  : request_mode(_init)
   {
     (void)_init;
   }
 
   explicit Mode_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : request_mode(_alloc, _init),
-    request_target(_alloc, _init)
+  : request_mode(_alloc, _init)
   {
     (void)_init;
   }
@@ -57,21 +53,12 @@ struct Mode_Request_
   using _request_mode_type =
     std_msgs::msg::Int16_<ContainerAllocator>;
   _request_mode_type request_mode;
-  using _request_target_type =
-    std_msgs::msg::Bool_<ContainerAllocator>;
-  _request_target_type request_target;
 
   // setters for named parameter idiom
   Type & set__request_mode(
     const std_msgs::msg::Int16_<ContainerAllocator> & _arg)
   {
     this->request_mode = _arg;
-    return *this;
-  }
-  Type & set__request_target(
-    const std_msgs::msg::Bool_<ContainerAllocator> & _arg)
-  {
-    this->request_target = _arg;
     return *this;
   }
 
@@ -120,9 +107,6 @@ struct Mode_Request_
     if (this->request_mode != other.request_mode) {
       return false;
     }
-    if (this->request_target != other.request_target) {
-      return false;
-    }
     return true;
   }
   bool operator!=(const Mode_Request_ & other) const
@@ -144,10 +128,7 @@ using Mode_Request =
 
 // Include directives for member types
 // Member 'response_mode'
-// already included above
-// #include "std_msgs/msg/detail/bool__struct.hpp"
-// Member 'response_target'
-#include "std_msgs/msg/detail/float32_multi_array__struct.hpp"
+#include "std_msgs/msg/detail/bool__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__fun4_interfaces__srv__Mode_Response __attribute__((deprecated))
@@ -168,15 +149,13 @@ struct Mode_Response_
   using Type = Mode_Response_<ContainerAllocator>;
 
   explicit Mode_Response_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : response_mode(_init),
-    response_target(_init)
+  : response_mode(_init)
   {
     (void)_init;
   }
 
   explicit Mode_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : response_mode(_alloc, _init),
-    response_target(_alloc, _init)
+  : response_mode(_alloc, _init)
   {
     (void)_init;
   }
@@ -185,21 +164,12 @@ struct Mode_Response_
   using _response_mode_type =
     std_msgs::msg::Bool_<ContainerAllocator>;
   _response_mode_type response_mode;
-  using _response_target_type =
-    std_msgs::msg::Float32MultiArray_<ContainerAllocator>;
-  _response_target_type response_target;
 
   // setters for named parameter idiom
   Type & set__response_mode(
     const std_msgs::msg::Bool_<ContainerAllocator> & _arg)
   {
     this->response_mode = _arg;
-    return *this;
-  }
-  Type & set__response_target(
-    const std_msgs::msg::Float32MultiArray_<ContainerAllocator> & _arg)
-  {
-    this->response_target = _arg;
     return *this;
   }
 
@@ -246,9 +216,6 @@ struct Mode_Response_
   bool operator==(const Mode_Response_ & other) const
   {
     if (this->response_mode != other.response_mode) {
-      return false;
-    }
-    if (this->response_target != other.response_target) {
       return false;
     }
     return true;

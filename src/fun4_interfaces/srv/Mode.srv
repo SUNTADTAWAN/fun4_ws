@@ -1,5 +1,4 @@
 std_msgs/Int16 request_mode
-std_msgs/Bool request_target
 ---
 std_msgs/Bool response_mode
-std_msgs/Float32MultiArray response_target
+

@@ -20,14 +20,11 @@ extern "C"
 // Include directives for member types
 // Member 'request_mode'
 #include "std_msgs/msg/detail/int16__struct.h"
-// Member 'request_target'
-#include "std_msgs/msg/detail/bool__struct.h"
 
 /// Struct defined in srv/Mode in the package fun4_interfaces.
 typedef struct fun4_interfaces__srv__Mode_Request
 {
   std_msgs__msg__Int16 request_mode;
-  std_msgs__msg__Bool request_target;
 } fun4_interfaces__srv__Mode_Request;
 
 // Struct for a sequence of fun4_interfaces__srv__Mode_Request.
@@ -45,16 +42,12 @@ typedef struct fun4_interfaces__srv__Mode_Request__Sequence
 
 // Include directives for member types
 // Member 'response_mode'
-// already included above
-// #include "std_msgs/msg/detail/bool__struct.h"
-// Member 'response_target'
-#include "std_msgs/msg/detail/float32_multi_array__struct.h"
+#include "std_msgs/msg/detail/bool__struct.h"
 
 /// Struct defined in srv/Mode in the package fun4_interfaces.
 typedef struct fun4_interfaces__srv__Mode_Response
 {
   std_msgs__msg__Bool response_mode;
-  std_msgs__msg__Float32MultiArray response_target;
 } fun4_interfaces__srv__Mode_Response;
 
 // Struct for a sequence of fun4_interfaces__srv__Mode_Response.

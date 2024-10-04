@@ -2,3 +2,7 @@ srv/Mode.idl
 srv/Mode.srv
 srv/Mode_Request.msg
 srv/Mode_Response.msg
+srv/Random.idl
+srv/Random.srv
+srv/Random_Request.msg
+srv/Random_Response.msg

@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__builder.hpp" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
   "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
   "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__traits.hpp" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
+  "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/random__builder.hpp" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
+  "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/random__struct.hpp" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
+  "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/detail/random__traits.hpp" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
+  "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/random.hpp" "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp"
   )
 
 

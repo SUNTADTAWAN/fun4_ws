@@ -1,10 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.o"
   "CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.o.d"
+  "CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o"
+  "CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o.d"
   "libfun4_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libfun4_interfaces__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c"
+  "rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c"
 )
 
 # Per-language clean rules from dependency scanning.

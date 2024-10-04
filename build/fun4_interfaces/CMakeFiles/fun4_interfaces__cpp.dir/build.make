@@ -70,6 +70,10 @@ CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/mode.h
 CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__builder.hpp
 CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp
 CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__traits.hpp
+CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/random.hpp
+CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/random__builder.hpp
+CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/random__struct.hpp
+CMakeFiles/fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/random__traits.hpp
 
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -87,6 +91,7 @@ rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/share/rosidl_
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: rosidl_adapter/fun4_interfaces/srv/Mode.idl
+rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: rosidl_adapter/fun4_interfaces/srv/Random.idl
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -131,11 +136,27 @@ rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp: rosidl_generat
 rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__traits.hpp: rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__traits.hpp
 
+rosidl_generator_cpp/fun4_interfaces/srv/random.hpp: rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/fun4_interfaces/srv/random.hpp
+
+rosidl_generator_cpp/fun4_interfaces/srv/detail/random__builder.hpp: rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/fun4_interfaces/srv/detail/random__builder.hpp
+
+rosidl_generator_cpp/fun4_interfaces/srv/detail/random__struct.hpp: rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/fun4_interfaces/srv/detail/random__struct.hpp
+
+rosidl_generator_cpp/fun4_interfaces/srv/detail/random__traits.hpp: rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/fun4_interfaces/srv/detail/random__traits.hpp
+
 fun4_interfaces__cpp: CMakeFiles/fun4_interfaces__cpp
 fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__builder.hpp
 fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__struct.hpp
 fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/mode__traits.hpp
+fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/random__builder.hpp
+fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/random__struct.hpp
+fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/detail/random__traits.hpp
 fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/mode.hpp
+fun4_interfaces__cpp: rosidl_generator_cpp/fun4_interfaces/srv/random.hpp
 fun4_interfaces__cpp: CMakeFiles/fun4_interfaces__cpp.dir/build.make
 .PHONY : fun4_interfaces__cpp
 

@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from fun4_interfaces/srv/Random.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Bool.idl"
+
+module fun4_interfaces {
+  module srv {
+    struct Random_Request {
+      std_msgs::msg::Bool request_target;
+    };
+    struct Random_Response {
+      std_msgs::msg::Bool response_target;
+    };
+  };
+};

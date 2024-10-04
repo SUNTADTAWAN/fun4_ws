@@ -60,11 +60,6 @@ CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesu
  /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_generator_c/fun4_interfaces/srv/detail/mode__struct.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int16__struct.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__struct.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/int16.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int16__functions.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
@@ -75,8 +70,4 @@ CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesu
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__functions.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__rosidl_typesupport_introspection_c.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/float32_multi_array.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__functions.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__type_support.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__rosidl_typesupport_introspection_c.h \
  /opt/ros/humble/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/service_introspection.h

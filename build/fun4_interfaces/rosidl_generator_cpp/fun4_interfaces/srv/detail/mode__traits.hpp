@@ -17,8 +17,6 @@
 // Include directives for member types
 // Member 'request_mode'
 #include "std_msgs/msg/detail/int16__traits.hpp"
-// Member 'request_target'
-#include "std_msgs/msg/detail/bool__traits.hpp"
 
 namespace fun4_interfaces
 {
@@ -35,13 +33,6 @@ inline void to_flow_style_yaml(
   {
     out << "request_mode: ";
     to_flow_style_yaml(msg.request_mode, out);
-    out << ", ";
-  }
-
-  // member: request_target
-  {
-    out << "request_target: ";
-    to_flow_style_yaml(msg.request_target, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -57,15 +48,6 @@ inline void to_block_style_yaml(
     }
     out << "request_mode:\n";
     to_block_style_yaml(msg.request_mode, out, indentation + 2);
-  }
-
-  // member: request_target
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "request_target:\n";
-    to_block_style_yaml(msg.request_target, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 
@@ -115,11 +97,11 @@ inline const char * name<fun4_interfaces::srv::Mode_Request>()
 
 template<>
 struct has_fixed_size<fun4_interfaces::srv::Mode_Request>
-  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Bool>::value && has_fixed_size<std_msgs::msg::Int16>::value> {};
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Int16>::value> {};
 
 template<>
 struct has_bounded_size<fun4_interfaces::srv::Mode_Request>
-  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Bool>::value && has_bounded_size<std_msgs::msg::Int16>::value> {};
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Int16>::value> {};
 
 template<>
 struct is_message<fun4_interfaces::srv::Mode_Request>
@@ -129,10 +111,7 @@ struct is_message<fun4_interfaces::srv::Mode_Request>
 
 // Include directives for member types
 // Member 'response_mode'
-// already included above
-// #include "std_msgs/msg/detail/bool__traits.hpp"
-// Member 'response_target'
-#include "std_msgs/msg/detail/float32_multi_array__traits.hpp"
+#include "std_msgs/msg/detail/bool__traits.hpp"
 
 namespace fun4_interfaces
 {
@@ -149,13 +128,6 @@ inline void to_flow_style_yaml(
   {
     out << "response_mode: ";
     to_flow_style_yaml(msg.response_mode, out);
-    out << ", ";
-  }
-
-  // member: response_target
-  {
-    out << "response_target: ";
-    to_flow_style_yaml(msg.response_target, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -171,15 +143,6 @@ inline void to_block_style_yaml(
     }
     out << "response_mode:\n";
     to_block_style_yaml(msg.response_mode, out, indentation + 2);
-  }
-
-  // member: response_target
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "response_target:\n";
-    to_block_style_yaml(msg.response_target, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 
@@ -229,11 +192,11 @@ inline const char * name<fun4_interfaces::srv::Mode_Response>()
 
 template<>
 struct has_fixed_size<fun4_interfaces::srv::Mode_Response>
-  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Bool>::value && has_fixed_size<std_msgs::msg::Float32MultiArray>::value> {};
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Bool>::value> {};
 
 template<>
 struct has_bounded_size<fun4_interfaces::srv::Mode_Response>
-  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Bool>::value && has_bounded_size<std_msgs::msg::Float32MultiArray>::value> {};
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Bool>::value> {};
 
 template<>
 struct is_message<fun4_interfaces::srv::Mode_Response>

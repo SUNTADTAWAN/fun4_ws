@@ -20,10 +20,6 @@ ROSIDL_GENERATOR_C_IMPORT
 bool std_msgs__msg__int16__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * std_msgs__msg__int16__convert_to_py(void * raw_ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-bool std_msgs__msg__bool__convert_from_py(PyObject * _pymsg, void * _ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * std_msgs__msg__bool__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool fun4_interfaces__srv__mode__request__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -69,17 +65,6 @@ bool fun4_interfaces__srv__mode__request__convert_from_py(PyObject * _pymsg, voi
     }
     Py_DECREF(field);
   }
-  {  // request_target
-    PyObject * field = PyObject_GetAttrString(_pymsg, "request_target");
-    if (!field) {
-      return false;
-    }
-    if (!std_msgs__msg__bool__convert_from_py(field, &ros_message->request_target)) {
-      Py_DECREF(field);
-      return false;
-    }
-    Py_DECREF(field);
-  }
 
   return true;
 }
@@ -116,20 +101,6 @@ PyObject * fun4_interfaces__srv__mode__request__convert_to_py(void * raw_ros_mes
       }
     }
   }
-  {  // request_target
-    PyObject * field = NULL;
-    field = std_msgs__msg__bool__convert_to_py(&ros_message->request_target);
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "request_target", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;
@@ -153,10 +124,6 @@ ROSIDL_GENERATOR_C_IMPORT
 bool std_msgs__msg__bool__convert_from_py(PyObject * _pymsg, void * _ros_message);
 ROSIDL_GENERATOR_C_IMPORT
 PyObject * std_msgs__msg__bool__convert_to_py(void * raw_ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-bool std_msgs__msg__float32_multi_array__convert_from_py(PyObject * _pymsg, void * _ros_message);
-ROSIDL_GENERATOR_C_IMPORT
-PyObject * std_msgs__msg__float32_multi_array__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool fun4_interfaces__srv__mode__response__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -202,17 +169,6 @@ bool fun4_interfaces__srv__mode__response__convert_from_py(PyObject * _pymsg, vo
     }
     Py_DECREF(field);
   }
-  {  // response_target
-    PyObject * field = PyObject_GetAttrString(_pymsg, "response_target");
-    if (!field) {
-      return false;
-    }
-    if (!std_msgs__msg__float32_multi_array__convert_from_py(field, &ros_message->response_target)) {
-      Py_DECREF(field);
-      return false;
-    }
-    Py_DECREF(field);
-  }
 
   return true;
 }
@@ -243,20 +199,6 @@ PyObject * fun4_interfaces__srv__mode__response__convert_to_py(void * raw_ros_me
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "response_mode", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // response_target
-    PyObject * field = NULL;
-    field = std_msgs__msg__float32_multi_array__convert_to_py(&ros_message->response_target);
-    if (!field) {
-      return NULL;
-    }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "response_target", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

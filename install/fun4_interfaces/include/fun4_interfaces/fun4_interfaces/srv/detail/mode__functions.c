@@ -13,8 +13,6 @@
 // Include directives for member types
 // Member `request_mode`
 #include "std_msgs/msg/detail/int16__functions.h"
-// Member `request_target`
-#include "std_msgs/msg/detail/bool__functions.h"
 
 bool
 fun4_interfaces__srv__Mode_Request__init(fun4_interfaces__srv__Mode_Request * msg)
@@ -24,11 +22,6 @@ fun4_interfaces__srv__Mode_Request__init(fun4_interfaces__srv__Mode_Request * ms
   }
   // request_mode
   if (!std_msgs__msg__Int16__init(&msg->request_mode)) {
-    fun4_interfaces__srv__Mode_Request__fini(msg);
-    return false;
-  }
-  // request_target
-  if (!std_msgs__msg__Bool__init(&msg->request_target)) {
     fun4_interfaces__srv__Mode_Request__fini(msg);
     return false;
   }
@@ -43,8 +36,6 @@ fun4_interfaces__srv__Mode_Request__fini(fun4_interfaces__srv__Mode_Request * ms
   }
   // request_mode
   std_msgs__msg__Int16__fini(&msg->request_mode);
-  // request_target
-  std_msgs__msg__Bool__fini(&msg->request_target);
 }
 
 bool
@@ -56,12 +47,6 @@ fun4_interfaces__srv__Mode_Request__are_equal(const fun4_interfaces__srv__Mode_R
   // request_mode
   if (!std_msgs__msg__Int16__are_equal(
       &(lhs->request_mode), &(rhs->request_mode)))
-  {
-    return false;
-  }
-  // request_target
-  if (!std_msgs__msg__Bool__are_equal(
-      &(lhs->request_target), &(rhs->request_target)))
   {
     return false;
   }
@@ -79,12 +64,6 @@ fun4_interfaces__srv__Mode_Request__copy(
   // request_mode
   if (!std_msgs__msg__Int16__copy(
       &(input->request_mode), &(output->request_mode)))
-  {
-    return false;
-  }
-  // request_target
-  if (!std_msgs__msg__Bool__copy(
-      &(input->request_target), &(output->request_target)))
   {
     return false;
   }
@@ -273,10 +252,7 @@ fun4_interfaces__srv__Mode_Request__Sequence__copy(
 
 // Include directives for member types
 // Member `response_mode`
-// already included above
-// #include "std_msgs/msg/detail/bool__functions.h"
-// Member `response_target`
-#include "std_msgs/msg/detail/float32_multi_array__functions.h"
+#include "std_msgs/msg/detail/bool__functions.h"
 
 bool
 fun4_interfaces__srv__Mode_Response__init(fun4_interfaces__srv__Mode_Response * msg)
@@ -286,11 +262,6 @@ fun4_interfaces__srv__Mode_Response__init(fun4_interfaces__srv__Mode_Response * 
   }
   // response_mode
   if (!std_msgs__msg__Bool__init(&msg->response_mode)) {
-    fun4_interfaces__srv__Mode_Response__fini(msg);
-    return false;
-  }
-  // response_target
-  if (!std_msgs__msg__Float32MultiArray__init(&msg->response_target)) {
     fun4_interfaces__srv__Mode_Response__fini(msg);
     return false;
   }
@@ -305,8 +276,6 @@ fun4_interfaces__srv__Mode_Response__fini(fun4_interfaces__srv__Mode_Response * 
   }
   // response_mode
   std_msgs__msg__Bool__fini(&msg->response_mode);
-  // response_target
-  std_msgs__msg__Float32MultiArray__fini(&msg->response_target);
 }
 
 bool
@@ -318,12 +287,6 @@ fun4_interfaces__srv__Mode_Response__are_equal(const fun4_interfaces__srv__Mode_
   // response_mode
   if (!std_msgs__msg__Bool__are_equal(
       &(lhs->response_mode), &(rhs->response_mode)))
-  {
-    return false;
-  }
-  // response_target
-  if (!std_msgs__msg__Float32MultiArray__are_equal(
-      &(lhs->response_target), &(rhs->response_target)))
   {
     return false;
   }
@@ -341,12 +304,6 @@ fun4_interfaces__srv__Mode_Response__copy(
   // response_mode
   if (!std_msgs__msg__Bool__copy(
       &(input->response_mode), &(output->response_mode)))
-  {
-    return false;
-  }
-  // response_target
-  if (!std_msgs__msg__Float32MultiArray__copy(
-      &(input->response_target), &(output->response_target)))
   {
     return false;
   }

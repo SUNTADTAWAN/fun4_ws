@@ -3,7 +3,8 @@
   "output_dir": "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_typesupport_introspection_cpp/fun4_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
-    "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_adapter/fun4_interfaces:srv/Mode.idl"
+    "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_adapter/fun4_interfaces:srv/Mode.idl",
+    "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_adapter/fun4_interfaces:srv/Random.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -49,6 +50,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
     "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_adapter/fun4_interfaces/srv/Mode.idl",
+    "/home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_adapter/fun4_interfaces/srv/Random.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

@@ -18,6 +18,7 @@ class ControllerNode(Node):
         super().__init__('controller_node')
         self.joint_sub = self.create_subscription(JointState, "/joint_states",self.joint_states_callback,1)
         self.end_effector_send = self.create_publisher(PoseStamped,'/end_effector',10)
+        
         self.joint = [0.0,0.0,0.0]
 
         

@@ -69,6 +69,9 @@ include CMakeFiles/fun4_interfaces.dir/progress.make
 CMakeFiles/fun4_interfaces: /home/tadtawan/fun4_ws/src/fun4_interfaces/srv/Mode.srv
 CMakeFiles/fun4_interfaces: rosidl_cmake/srv/Mode_Request.msg
 CMakeFiles/fun4_interfaces: rosidl_cmake/srv/Mode_Response.msg
+CMakeFiles/fun4_interfaces: /home/tadtawan/fun4_ws/src/fun4_interfaces/srv/Random.srv
+CMakeFiles/fun4_interfaces: rosidl_cmake/srv/Random_Request.msg
+CMakeFiles/fun4_interfaces: rosidl_cmake/srv/Random_Response.msg
 CMakeFiles/fun4_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/fun4_interfaces: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/fun4_interfaces: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl

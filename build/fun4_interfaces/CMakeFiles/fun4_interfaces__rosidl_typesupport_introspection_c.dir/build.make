@@ -78,6 +78,7 @@ rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_types
 rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
 rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h: rosidl_adapter/fun4_interfaces/srv/Mode.idl
+rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h: rosidl_adapter/fun4_interfaces/srv/Random.idl
 rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -113,8 +114,14 @@ rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_types
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
+rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c
+
+rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c
 
 CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.o: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.o: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c
@@ -130,14 +137,30 @@ CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c -o CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.s
 
+CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c
+CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o -MF CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o.d -o CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o -c /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c
+
+CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c > CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.i
+
+CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tadtawan/fun4_ws/build/fun4_interfaces/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c -o CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.s
+
 # Object files for target fun4_interfaces__rosidl_typesupport_introspection_c
 fun4_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
-"CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.o"
+"CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.o" \
+"CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o"
 
 # External object files for target fun4_interfaces__rosidl_typesupport_introspection_c
 fun4_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libfun4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c.o
+libfun4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c.o
 libfun4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libfun4_interfaces__rosidl_typesupport_introspection_c.so: libfun4_interfaces__rosidl_generator_c.so
 libfun4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
@@ -148,7 +171,7 @@ libfun4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/l
 libfun4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libfun4_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libfun4_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libfun4_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libfun4_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -161,6 +184,8 @@ CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__rosidl_typesupport_introspection_c.h
 CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/mode__type_support.c
+CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__rosidl_typesupport_introspection_c.h
+CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/fun4_interfaces/srv/detail/random__type_support.c
 	cd /home/tadtawan/fun4_ws/build/fun4_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tadtawan/fun4_ws/src/fun4_interfaces /home/tadtawan/fun4_ws/src/fun4_interfaces /home/tadtawan/fun4_ws/build/fun4_interfaces /home/tadtawan/fun4_ws/build/fun4_interfaces /home/tadtawan/fun4_ws/build/fun4_interfaces/CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fun4_interfaces__rosidl_typesupport_introspection_c.dir/depend
 

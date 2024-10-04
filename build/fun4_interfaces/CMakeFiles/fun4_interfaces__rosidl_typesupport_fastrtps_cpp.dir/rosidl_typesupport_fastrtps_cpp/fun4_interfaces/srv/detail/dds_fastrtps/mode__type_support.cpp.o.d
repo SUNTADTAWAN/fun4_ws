@@ -164,9 +164,6 @@ CMakeFiles/fun4_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesuppo
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int16__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp \
  /opt/ros/humble/include/fastcdr/fastcdr/Cdr.h \
  /opt/ros/humble/include/fastcdr/fastcdr/fastcdr_dll.h \
  /opt/ros/humble/include/fastcdr/fastcdr/config.h \

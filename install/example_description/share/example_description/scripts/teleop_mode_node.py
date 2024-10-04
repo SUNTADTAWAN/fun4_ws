@@ -7,7 +7,7 @@ from geometry_msgs.msg import Twist
 from std_msgs.msg import String
 
 from std_msgs.msg import Bool,Int16
-from fun4_interfaces.srv import Mode
+from fun4_interfaces.srv import Mode,Random
 
 
 class DummyNode(Node):

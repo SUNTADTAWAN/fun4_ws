@@ -3,20 +3,15 @@
 // generated code does not contain a copyright notice
 
 #include "std_msgs/msg/Bool.idl"
-#include "std_msgs/msg/Float32MultiArray.idl"
 #include "std_msgs/msg/Int16.idl"
 
 module fun4_interfaces {
   module srv {
     struct Mode_Request {
       std_msgs::msg::Int16 request_mode;
-
-      std_msgs::msg::Bool request_target;
     };
     struct Mode_Response {
       std_msgs::msg::Bool response_mode;
-
-      std_msgs::msg::Float32MultiArray response_target;
     };
   };
 };
