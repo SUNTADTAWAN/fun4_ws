@@ -1,6 +1,7 @@
 # FRA501 FUN4 6531
 
-### Architecture
+### Work space
+
 
 ### 1. Install Environment
 1. Install Ubuntu 22.04
