@@ -30,11 +30,15 @@
    ```sh
    git clone https://github.com/SUNTADTAWAN/fun4_ws.git
    ```
-2. Build Package
+2. Remove Build install and log Before build
+   ```sh
+   rm -rf build/ install/ log/
+   ```
+3. Build Package
    ```sh
    colcon build
    ```
-3. Source
+4. Source
    ```sh
    source install/setup.bash
    ```
