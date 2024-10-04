@@ -58,6 +58,13 @@
    ```sh
    ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 3"
    ```
+2.1 Mode 1 
+   ```sh
+   ros2 topic pub /target_mode1 std_msgs/msg/Float64MultiArray "layout:
+   dim: []
+   data_offset: 0
+   data: [0.2,0.4,0.3]" 
+   ```
 
 
 ## How to Fix when Bug
