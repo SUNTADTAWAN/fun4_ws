@@ -71,7 +71,7 @@
    ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 2"
    ```
 
-#### Mode 3
+#### Mode 3 (Default mode)
    Change mode to mode3(Auto Mode)
    ```sh
    ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 3"
