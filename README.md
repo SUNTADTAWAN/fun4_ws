@@ -29,9 +29,9 @@
    colcon build
    ```
 3. Source
-  ```sh
-  source install/setup.bash
-  ```
+   ```sh
+   source install/setup.bash
+   ```
 
 ### 3. Run
 1. run launch file
