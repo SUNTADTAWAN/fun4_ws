@@ -20,7 +20,10 @@
 5. Install numpy
 
 ### 2. Install Package
-1. 
+1. clone Package
+   ```sh
+   git clone https://github.com/SUNTADTAWAN/fun4_ws.git
+   ```
 
 
 ## How to Fix when Bug
