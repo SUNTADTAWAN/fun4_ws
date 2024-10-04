@@ -38,6 +38,10 @@
    ```sh
    ros2 launch example_description fun4.launch.py 
    ```
+2. run teleop_twist_keyboard
+   ```sh
+   ros2 run ros2_teleop_keyboard teleop_twist_keyboard.py
+   ```
 
 ### 4. How to use
 1. When you want to change mode
@@ -54,6 +58,7 @@
    ```sh
    ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 3"
    ```
+
 
 ## How to Fix when Bug
 4. Something else :
