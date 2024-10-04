@@ -46,28 +46,31 @@
    ```
 
 ### 4. How to use
-1. When you want to change mode
 
-   Mode 1 (IPK_Mode)
+   
+Mode 1 
+   Change mode to mode1(IPK Mode)
    ```sh
    ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 1"
    ```
-   Mode 2 (Teleop_Mode)
-   ```sh
-   ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 2"
-   ```
-   Mode 3 (Auto_Mode)
-   ```sh
-   ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 3"
-   ```
-2.1 Mode 1 
+   Pubblish position x,y,z (data:[x,y,z])
    ```sh
    ros2 topic pub /target_mode1 std_msgs/msg/Float64MultiArray "layout:
    dim: []
    data_offset: 0
-   data: [0.2,0.4,0.3]" 
+   data: [0.0,0.0,0.0]" 
    ```
 
+Mode 2
+   Change mode to mode2(Teleop Mode)
+   ```sh
+   ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 2"
+   ```
+Mode 3
+   Change mode to mode3(Auto Mode)
+   ```sh
+   ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 3"
+   ```
 
 ## How to Fix when Bug
 4. Something else :
