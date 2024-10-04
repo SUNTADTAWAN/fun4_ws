@@ -32,6 +32,7 @@
 
 ### 4. How to use
 1. When you want to change mode
+
    Mode 1 (IPK_Mode)
    ```sh
    ros2 service call /request_mode fun4_interfaces/srv/Mode "request_mode:data: 1"
